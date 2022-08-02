@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // verbose    boiler plate code  PYTHON
+        // Maak een alcohol toestemming
+        // vul leeftijd in    < 18  geen alcohol ander prima
+        // -- oudere wetgeving <16    vs 16 17  vs 18+
+        // ---   pas ook de kleur aan 
+        function denaamfunctie(){
+            var invoer = document.getElementById("abracadabra").value;
+            document.getElementById("korter").innerHTML = "Welkom: <b>"+invoer+"</b>";
+            // if
+            // html
+            // parse
+            if(invoer == "abc"){
+                alert("geen ge-abc hier");
+                
+            }else{
+                alert("dit mag");
+            }
+            getal = parseInt(invoer);
+            console.log(getal + getal);
+            var elem = document.getElementById("korter");
+            console.log(elem);
+            if(invoer == "frits"){
+                elem.style.backgroundColor = "red";
+            } else{
+                elem.style.backgroundColor = "green";
+            }
+            
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Klik hier" onclick="denaamfunctie()"/>
+    <br>
+    <input type="text" id="abracadabra">
+    <br>
+    <div id="korter">Welkom:</div>
+</body>
+</html>
